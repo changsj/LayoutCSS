@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Twitter</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <style type="text/css">
+
+    /*###### Separate ###########*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50em;
+    }
+    body {
+        border: 0px solid red;
+        background: teal;
+    }
+    .t-reg-top {
+        background: #eee;
+    }
+    .t-reg-sideleft {
+        background: #ddd;
+    }
+    .t-reg-mid {
+        background: #cdc;
+    }
+
+
+
+    /*###### reg bottom ##########*/
+
+
+
+    /*###### reg float ##########*/
+
+    .t-reg-sideleft {
+        width: 20em;
+        float: left;
+    }
+    .t-reg-mid {
+        margin-left: 20em;
+    }
+
+    /*####### reg top ####### */
+
+    /* 顶部固定 - reg position 固定位置在 屏幕上方 */
+
+    .t-reg-top {
+        position: fixed;
+        top: 0;
+        height: 3em;
+    }
+
+    body {
+        margin-top: 3.2em;
+    }
+
+    /*###### reg positon ##########*/ /* margin width or page */
+
+    /* 顶部 -  */
+
+    /* 顶部 - reg position 三块的各自宽度 */
+
+    .t-reg-top {
+        height: 3em;
+        width: 50em; /* 100% */
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+    }
+    .t-ireg-1, .t-ireg-3 {
+        width: 20em;
+    }
+    .t-ireg-2 {
+        width: 10em;
+    }
+
+    /* t-ireg-1 t-ireg-2 t-ireg-3 顶部 - 三块内居中*/
+
+    ul.t-ireg-1 , .t-ireg-2 , .t-ireg-3 {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+    }
+    /* t-ireg-1 */
+
+    ul.t-ireg-1 {
+        list-style: none;
+    }
+    /*
+    ul.t-ireg-1 li:before {
+        content: '\A0';
+    }*/
+    
+    /* 顶部 - 纵向居中*/
+
+    .t-ireg-2 , .t-ireg-3 {
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 2em;
+    }
+
+    /* 左边 - */
+
+    .t-ireg-4 , .t-ireg-5 , .t-ireg-6 , .t-ireg-7 , .t-ireg-8 {
+        margin: 2em 1em;
+        background: #fff;
+    }
+        /* t-ireg-4 */
+
+    .t-iireg-4 {
+        height: 14em;
+    }
+    .t-iireg-4-1 {
+        height: 7em;
+        background: #111;
+    }
+    .t-iireg-4-2 img {/* 80x80 */
+        float: left;
+        /*width: 5em;*/
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: -3em;
+    }
+    .t-iireg-4-2 h3 {
+        margin-top: .5em;
+    }
+    .clear {
+        clear: both;
+    }
+    ul.t-iireg-4-3 {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+    }
+    .t-iireg-4-3 {
+        margin-top: 1em;
+    }
+
+        /* t-ireg-5 */
+
+    .t-ireg-5 ul.title {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: left;
+        -webkit-justify-content: left;
+        align-items: baseline;
+        -webkit-align-items: baseline;
+
+        list-style: none;
+
+        margin-bottom: .5em;
+    }
+    .t-ireg-5 .first {
+        font-size: 1.5em;
+    }
+
+        /* t-ireg-6 */
+        
+    .t-ireg-6 ul.title {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: left;
+        -webkit-justify-content: left;
+        align-items: baseline;
+        -webkit-align-items: baseline;
+
+        list-style: none;
+
+        margin-bottom: .5em;
+    }
+    .t-ireg-6 .first {
+        font-size: 1.5em;
+    }
+    .t-ireg-6 ul.t-iireg-6-2 li {
+        line-height: 1.5em;
+    }
+    .t-ireg-6 ul.t-iireg-6-2 {
+        list-style: none;
+    }
+    
+        /* t-ireg-7 */
+
+    .t-ireg-7-1 {
+        height: 3em;
+        line-height: 3em;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+        /* t-ireg-8 */
+    ul.t-ireg-8-1 {
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        /*justify-content: left;*/
+        /*-webkit-justify-content: left;*/
+        /*align-items: baseline;*/
+        /*-webkit-align-items: baseline;*/
+
+        list-style: none;
+
+        line-height: 1.5em;
+    }
+    ul.t-ireg-8-1 li:before {
+        content: '\A0\A0';
+    }
+    
+    /* 中间 - */
+    .t-reg-mid {
+        width: 30em;
+    }
+
+    .t-ireg-9 , .t-ireg-10 , .t-ireg-11 {
+        margin: 0 1em;
+        background: #fff;
+    }
+
+        /* t-ireg-9 tweet textarea */
+        
+    .t-ireg-9 {
+        background: #ddd;
+    }
+    .t-ireg-9 {
+        height: 7em;
+        margin-top: 2em;
+    }
+    .t-ireg-9 {
+      display: -webkit-flex;
+      display: flex;
+    }
+    .t-ireg-9 img {
+        width: 4em;
+        float: left;
+        margin: auto;
+        padding-bottom: 1em;
+    }
+    .t-ireg-9 textarea {
+        margin: 0.7em 0;
+    }
+
+        /* t-ireg-10 */
+    .t-ireg-10 {
+        background: #eee;
+    }
+    .t-ireg-10 {
+        height: 3em;
+        line-height: 3em;
+    }
+    .t-ireg-10 {
+        text-align: center;
+    }
+    
+        /* t-ireg-11 tweet */
+
+    .t-ireg-11 {
+        margin-bottom: 1em;
+    }
+
+    .tweet-user {
+        /*background: red;*/
+    }
+
+    .tweet-user {
+        float: left;
+        width: 8em;
+    }
+    .tweet-title , .tweet-body , .tweet-footer {
+        margin-left: 8em;
+    }
+
+
+    .tweet-user {
+        text-align: center; /*img*/
+    }
+    .tweet-title , .tweet-footer {
+        height: 3em;
+        line-height: 3em;
+    }
+    .tweet-body {
+        line-height: 1.5em;
+    }
+    .tweet-user img {
+        margin-top: 1em;
+    }
+
+    /*###### mic position ##########*/ /*行内形状如 line-height*/
+
+    /* 顶部 - */
+
+    .t-reg-top {
+        line-height: 3em;
+    }
+
+    /* 左边 - */
+
+    .t-iireg-4-3 .n {
+        font-size: 1.4em;
+    }
+
+
+    /*###### mic color ##########*/ /*文字上色*/
+
+
+
+    /*###### reg others ##########*/ /*背景图 边框图*/
+
+    .box {
+        position: absolute;
+        top: 3em;
+        left: 10em;
+
+        width: 13em;
+        height: 13em;
+
+        background-color: red;
+    }
+
+    
+    </style>
+
+<!-- 
+t-reg-top
+  t-mic-row
+  t-ireg-1  t-ireg-2  t-ireg-3
+
+t-reg-sideleft
+  t-mic-row   t-mic-row   t-mic-row    t-mic-row    t-mic-row
+  t-ireg-4    t-ireg-5    t-ireg-6     t-ireg-7     t-ireg-8
+    t-ireg-4-1 t-ireg-4-2 t-ireg-4-3 / t-iireg-5-1 t-iireg-5-2 / t-iireg-6-1 t-iireg-6-2 / t-ireg-7-1 / t-ireg-8-1 / 
+
+t-reg-mid
+  t-mic-row    t-mic-row    t-mic-row
+  t-ireg-9    t-ireg-10    t-ireg-11
+
+ -->
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="t-mic-row">
+        <div class="t-reg-top">
+            
+            <ul class="t-ireg-1">
+                <li>主页</li>
+                <li>通知</li>
+                <li>私信</li>
+                <li>发现</li>
+            </ul>
+        
+            <div class="t-ireg-2">
+                <img src="http://placehold.it/100x30/" alt="twitter-icon">
+            </div>
+
+            <div class="t-ireg-3">
+                <input type="text" style="width: 18em;">
+                <img src="http://placehold.it/30x30/" alt="User">
+                <img src="http://placehold.it/30x30/" alt="New">
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- 左边 -->
+    <div class="t-reg-sideleft">
+
+        <div class="t-ireg-4">
+            <div class="t-mic-row">
+
+                <div class="t-iireg-4-1">&nbsp;</div>
+
+                <div class="t-iireg-4-2">
+                    <img src="http://placehold.it/80x80/" alt="">
+                    <h3>Chang Sijie</h3>
+                    <small>@changsijie</small>
+                    <div class="clear"></div>
+                </div>
+                
+                
+                <ul class="t-iireg-4-3">
+                    <li>推文<div class="n">140</div></li>
+                    <li>正在关注<div class="n">238</div></li>
+                    <li>关注者<div class="n">16</div></li>
+                </ul>
+            
+                
+            </div>
+        </div>
+
+        <div class="t-ireg-5">
+            <div class="t-mic-row">
+
+                <ul class="t-iireg-5-1 title">
+                    <li class="first">推荐关注</li>
+                    <li>&nbsp;·&nbsp;刷新&nbsp;·</li>
+                    <li>&nbsp;查看全部</li>
+                </ul>
+                <div class="t-iireg-5-2">Lorem ipsum dolor sit amet.</div>
+                
+            </div>
+        </div>
+
+        <div class="t-ireg-6">
+            <div class="t-mic-row">
+
+                <ul class="t-iireg-6-1 title">
+                    <li class="first">美国趋势</li>
+                    <li>&nbsp;·&nbsp;更改</li>
+                </ul>
+                <ul class="t-iireg-6-2">
+                    <li>#HappyBirthdayCalumHood</li>
+                    <li>#Worst3WordPickUpLines</li>
+                    <li>#RoyalRumbleIn5Words</li>
+                    <li>#FourFiveSeconds</li>
+                    <li>#Juno</li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div class="t-ireg-7">
+            <div class="t-mic-row">
+                <div class="t-ireg-7-1">
+                    11 条新的关注请求
+                </div>
+            </div>
+        </div>
+
+        <div class="t-ireg-8">
+            <div class="t-mic-row">
+                <ul class="t-ireg-8-1">
+
+                    <li>© 2015 Twitter</li>
+                    <li>关于</li>
+                    <li>帮助</li>
+                    <li>条款</li>
+                    <li>隐私</li>
+                    <li>Cookies</li>
+                    <li>广告信息</li>
+                    <li>商标</li>
+                    <li>博客</li>
+                    <li>状态</li>
+                    <li>应用</li>
+                    <li>工作机会</li>
+                    <li>广告</li>
+                    <li>企业</li>
+                    <li>媒体</li>
+                    <li>开发者</li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 中间 -->
+
+    <div class="t-reg-mid">
+
+    <div class="t-reg-mid-top"> 
+
+        <div class="t-mic-row">
+            <div class="t-ireg-9">
+                <img src="http://placehold.it/80x80/" alt="">
+                <textarea name="" id="" cols="40" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="t-reg-mid-mid">
+        <div class="t-mic-row">
+            <div class="t-ireg-10">
+                <p>查看 51 条新推文</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="t-reg-mid-long">
+        <div class="t-mic-row">
+
+<!-- tweet1 -->
+            <div class="t-ireg-11">
+
+                <div class="tweet-user">
+                    <img src="http://placehold.it/80x80/" alt="">
+                </div>
+
+                <div class="tweet-title">
+                    Fact @fact 2小时
+                </div>
+                <div class="tweet-body">
+                    Your body craves sugary, salty and fatty foods when you're under a lot of stress. salty and fatty foods when you're under a lot of stress. salty and fatty foods when you're under a lot of stress.
+                </div>
+                <div class="tweet-footer">
+                    reply retweet star more
+                </div>
+
+            </div>
+<!-- tweet2 -->
+            <div class="t-ireg-11">
+
+                <div class="tweet-user">
+                    <img src="http://placehold.it/80x80/" alt="">
+                </div>
+
+                <div class="tweet-title">
+                    Fact @fact 3小时
+                </div>
+                <div class="tweet-body">
+                    Throwing apples at people was a way of declaring your love in ancient Greece.
+                </div>
+                <div class="tweet-footer">
+                    reply retweet star more
+                </div>
+
+            </div>
+<!-- tweet3 -->
+            <div class="t-ireg-11">
+
+                <div class="tweet-user">
+                    <img src="http://placehold.it/80x80/" alt="">
+                </div>
+
+                <div class="tweet-title">
+                    Fact @fact 5小时
+                </div>
+                <div class="tweet-body">
+                    Throwing apples at people was a way of declaring your love in ancient Greece.
+                </div>
+                <div class="tweet-footer">
+                    reply retweet star more
+                </div>
+
+            </div>
+<!-- tweet4 -->
+            <div class="t-ireg-11">
+
+                <div class="tweet-user">
+                    <img src="http://placehold.it/80x80/" alt="">
+                </div>
+
+                <div class="tweet-title">
+                    Fact @fact 8小时
+                </div>
+                <div class="tweet-body">
+                    Throwing apples at people was a way of declaring your love in ancient Greece.
+                </div>
+                <div class="tweet-footer">
+                    reply retweet star more
+                </div>
+
+            </div>
+<!-- tweet5 -->
+            <div class="t-ireg-11">
+
+                <div class="tweet-user">
+                    <img src="http://placehold.it/80x80/" alt="">
+                </div>
+
+                <div class="tweet-title">
+                    Fact @fact 11小时
+                </div>
+                <div class="tweet-body">
+                    Throwing apples at people was a way of declaring your love in ancient Greece.
+                </div>
+                <div class="tweet-footer">
+                    reply retweet star more
+                </div>
+
+            </div>
+<!-- tweet6 -->
+            <div class="t-ireg-11">
+
+                <div class="tweet-user">
+                    <img src="http://placehold.it/80x80/" alt="">
+                </div>
+
+                <div class="tweet-title">
+                    Fact @fact 12小时
+                </div>
+                <div class="tweet-body">
+                    Throwing apples at people was a way of declaring your love in ancient Greece.
+                </div>
+                <div class="tweet-footer">
+                    reply retweet star more
+                </div>
+
+            </div>
+<!-- tweet end -->
+
+        </div>
+    </div>
+    <!-- <div class="clear"></div> -->
+
+    </div>
+
+</body>
+</html>
