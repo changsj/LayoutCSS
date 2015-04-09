@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>blank</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/styfle.css">
+
+    <style type="text/css">
+
+    /*###### Separate ###########*/
+
+    .t-reg-top {
+        background: silver;
+    }
+
+    .t-reg-bottom {
+        background: silver;
+    }
+
+    p {
+        padding:0;
+        margin:0;
+    }
+
+    /*###### reg bottom ##########*/
+
+    /* {spare-height} */
+    
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 4em;
+    }
+    .t-reg-bottom {
+        position:absolute;
+        bottom:0;
+        height:4em;
+        width:100%;
+    }
+    .t-mic-row-7 {
+        margin-bottom: 8em; /* 8-3 = 5 */
+    }
+
+    /*###### reg float ##########*/
+
+    .t-mic-row-1 {
+        width: 22em;
+        float: left;
+    }
+    .t-mic-row-2 {
+        width: 3em;
+        float: right;
+    }
+    .t-mic-row-3 {
+        width: 12em;
+        float: left;
+    }
+    .t-mic-row-4 {
+        width: 12em;
+        float: right;
+    }
+    .t-mic-push {
+        clear: both;
+    }
+
+    /*###### reg positon ##########*/
+
+    .t-mic-row-5 {
+
+        text-align: center;
+        margin-top: 8em;            /*     ?????     */
+    }
+    .t-mic-row-6 {
+        text-align: center;
+        margin-top: 1em;
+    }
+    .t-mic-row-7 {
+        text-align: center;
+        margin-top: .5em;
+    }
+
+    /*###### mic position ##########*/
+
+    .t-mic-row-1, .t-mic-row-2 {
+        line-height: 2.5em;
+        height: 2.5em;
+        text-align: center;
+    }
+
+    .t-mic-row-3, .t-mic-row-4 {
+        line-height: 4em;
+        height: 4em;
+        text-align: center;
+    }
+
+
+    /*###### mic color ##########*/
+
+    .t-reg-top {
+        background: #2d2d2d;
+        color: #cccccc;
+    }
+    .t-reg-bottom {
+        background: #f4f4f5;
+        color: #666;
+    }
+
+    body {
+        background: white;
+    }
+
+    /*###### others ##########*/
+
+    body {
+        min-width: 35em;
+    }
+    .t-reg-bottom {
+        min-width: 35em;
+    }
+
+
+
+
+/*
+t-mic-row t-mic-row t-mic-row
+t-reg-top t-reg-mid t-reg-bottom
+
+t-reg-top
+  t-mic-col t-mic-col
+  t-reg-sideleft t-reg-sideright
+
+t-reg-mid
+  t-mic-row t-mic-row
+
+t-reg-mid>t-mic-push
+*/
+    </style>
+
+</head>
+
+<body>
+
+    <div class="t-reg-top">
+        <div class="t-mic-row">
+            <div class="t-mic-row-1">
+                <p>+你 搜索 图片 地图 Play YouTube 新闻 Gmail</p>
+            </div>
+            <div class="t-mic-row-2">
+                <p>登录</p>
+            </div>
+            <div class="t-mic-row">&nbsp;
+                <div class="t-mic-push"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="t-reg-mid">
+        <div class="t-mic-row">
+            <div class="t-mic-row-5">
+                <img src="images/Google-icon.png" alt="">
+            </div>
+            <div class="t-mic-row-6">
+                <img src="images/Input框.png" alt="">
+            </div>
+            <div class="t-mic-row-7">
+                <img src="images/button-Google搜索.png" alt="">
+                <img src="images/button-手气不错.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="t-reg-bottom">
+        <div class="t-mic-row">
+            <div class="t-mic-row-3">
+                <p>广告 商务 Google 大全</p>
+            </div>
+            <div class="t-mic-row-4">
+                <p>隐私权和使用条款 设置</p>
+            </div>
+            <div class="t-mic-row">
+                <div class="t-mic-push"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
